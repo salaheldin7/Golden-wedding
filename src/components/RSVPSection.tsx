@@ -71,7 +71,7 @@ export default function RSVPSection() {
             Kindly respond by March 1, 2026
           </p>
           <p className="font-arabic text-xs text-stone-400" dir="rtl">
-            يرجى الرد قبل 1 مارس 2026
+            يرجى الرد عليها
           </p>
           <div className="golden-divider w-40 mx-auto mt-4" />
         </motion.div>

@@ -122,7 +122,7 @@ export default function HeroSection() {
 
           {/* Scroll cue */}
         <motion.div
-          className="mt-4 flex flex-col items-center gap-2"
+          className="mt-2 flex flex-col items-center gap-2"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.6, duration: 0.8 }}
