@@ -8,6 +8,14 @@ export default function HeroSection() {
         background: 'linear-gradient(180deg, #fbf6ee 0%, #f2e5d4 55%, #ead7bf 100%)',
       }}
     >
+      {/* ✅ Nuclear fix for iOS red Arabic text */}
+      <style>{`
+        .arabic-gold {
+          color: #c9a96e !important;
+          -webkit-text-fill-color: #c9a96e !important;
+        }
+      `}</style>
+
       {/* Background image */}
       <div
         className="absolute inset-0 pointer-events-none"
@@ -23,73 +31,43 @@ export default function HeroSection() {
 
       {/* Main Content */}
       <motion.div
-        className="
-          relative z-10 flex flex-col items-center text-center
-          px-6 w-full max-w-lg mx-auto
-        "
-        style={{
-          paddingTop: '0px',
-          paddingBottom: '12px',
-        }}
+        className="relative z-10 flex flex-col items-center text-center px-6 w-full max-w-lg mx-auto"
+        style={{ paddingTop: '0px', paddingBottom: '12px' }}
         initial={{ opacity: 0, y: -220 }}
         animate={{ opacity: 1, y: -15 }}
-        transition={{
-          duration: 1.2,
-          ease: [0.22, 1, 0.36, 1],
-        }}
+        transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
       >
         {/* Basmala */}
         <motion.img
           src="/logo/Basmala.png"
           alt="Basmala"
           className="w-44 sm:w-64 mx-auto opacity-90 pointer-events-none"
-          style={{
-            marginTop: '6px',
-            marginBottom: '-26px',
-          }}
+          style={{ marginTop: '6px', marginBottom: '-26px' }}
           initial={{ opacity: 0, y: -28 }}
           animate={{ opacity: 1, y: -6 }}
-          transition={{
-            delay: 0.2,
-            duration: 1,
-          }}
+          transition={{ delay: 0.2, duration: 1 }}
         />
 
         {/* Gold divider */}
         <motion.div
           className="golden-divider w-36 sm:w-44"
-          style={{
-            marginTop: '-20px',
-            marginBottom: '-8px',
-          }}
+          style={{ marginTop: '-20px', marginBottom: '-8px' }}
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
-          transition={{
-            delay: 0.5,
-            duration: 0.8,
-          }}
+          transition={{ delay: 0.5, duration: 0.8 }}
         />
 
         {/* Center logo */}
         <motion.div
-          style={{
-            marginBottom: '-6px',
-          }}
+          style={{ marginBottom: '-6px' }}
           initial={{ scale: 0, rotate: -180 }}
           animate={{ scale: 1, rotate: 0 }}
-          transition={{
-            delay: 0.4,
-            duration: 0.9,
-            type: 'spring',
-            damping: 14,
-          }}
+          transition={{ delay: 0.4, duration: 0.9, type: 'spring', damping: 14 }}
         >
           <img
             src="/logo/logo2.PNG"
             alt="Karim and Nada monogram"
-            style={{
-              width: 'clamp(46px, 11vw, 80px)',
-            }}
+            style={{ width: 'clamp(46px, 11vw, 80px)' }}
             className="opacity-70 mx-auto"
           />
         </motion.div>
@@ -97,35 +75,21 @@ export default function HeroSection() {
         {/* Save the Date */}
         <motion.p
           className="font-script lux-text-muted"
-          style={{
-            fontSize: 'clamp(23px, 6.5vw, 34px)',
-            marginBottom: '-2px',
-          }}
+          style={{ fontSize: 'clamp(23px, 6.5vw, 34px)', marginBottom: '-2px' }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{
-            delay: 0.7,
-            duration: 0.8,
-          }}
+          transition={{ delay: 0.7, duration: 0.8 }}
         >
           Save the Date
         </motion.p>
 
-        {/* Arabic */}
+        {/* Arabic subtitle — all color classes removed, arabic-gold applied */}
         <motion.p
-          className="font-arabic lux-text-soft"
-          style={{
-            fontSize: 'clamp(12px, 3.5vw, 16px)',
-            marginBottom: '5px',
-            color: '#c9a96e',
-            WebkitTextFillColor: '#c9a96e',
-          }}
+          className="font-arabic arabic-gold"
+          style={{ fontSize: 'clamp(12px, 3.5vw, 16px)', marginBottom: '5px' }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{
-            delay: 0.8,
-            duration: 0.8,
-          }}
+          transition={{ delay: 0.8, duration: 0.8 }}
           dir="rtl"
         >
           احفظوا التاريخ
@@ -133,72 +97,48 @@ export default function HeroSection() {
 
         {/* Names */}
         <motion.div
-          style={{
-            marginBottom: '3px',
-          }}
+          style={{ marginBottom: '3px' }}
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            delay: 0.9,
-            duration: 0.8,
-          }}
+          transition={{ delay: 0.9, duration: 0.8 }}
         >
           <h1
-            className="font-script leading-tight px-2"
-            style={{
-              fontSize: 'clamp(31px, 8.5vw, 52px)',
-              color: '#c9a96e',
-              WebkitTextFillColor: '#c9a96e',
-            }}
+            className="font-script arabic-gold leading-tight px-2"
+            style={{ fontSize: 'clamp(31px, 8.5vw, 52px)' }}
           >
             Karim & Nada
           </h1>
-         <p
-    className="font-basmala"
-    style={{
-      fontSize: 'clamp(19px, 5.5vw, 29px)',
-      marginTop: '-4px',
-      color: '#c9a96e',
-      WebkitTextFillColor: '#c9a96e',
-    }}
-    dir="rtl"
-  >
-    كريم يوسف و ندى هشام
-  </p>
+
+          {/* Arabic names — shimmer-text fully removed, arabic-gold forces gold on iOS */}
+          <p
+            className="font-basmala arabic-gold"
+            style={{ fontSize: 'clamp(19px, 5.5vw, 29px)', marginTop: '-4px' }}
+            dir="rtl"
+          >
+            كريم يوسف و ندى هشام
+          </p>
         </motion.div>
 
         {/* Divider */}
         <motion.div
           className="golden-divider w-48 sm:w-60"
-          style={{
-            marginBottom: '6px',
-          }}
+          style={{ marginBottom: '6px' }}
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
-          transition={{
-            delay: 1.0,
-            duration: 0.8,
-          }}
+          transition={{ delay: 1.0, duration: 0.8 }}
         />
 
         {/* Date row */}
         <motion.div
           className="flex w-full items-center justify-center gap-3 sm:gap-5"
-          style={{
-            marginBottom: '2px',
-          }}
+          style={{ marginBottom: '2px' }}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{
-            delay: 1.1,
-            duration: 0.8,
-          }}
+          transition={{ delay: 1.1, duration: 0.8 }}
         >
           <span
             className="font-script lux-text-muted"
-            style={{
-              fontSize: 'clamp(17px, 5.2vw, 27px)',
-            }}
+            style={{ fontSize: 'clamp(17px, 5.2vw, 27px)' }}
           >
             August
           </span>
@@ -206,9 +146,7 @@ export default function HeroSection() {
           <div className="text-center px-3 border-l border-r border-[rgba(201,169,110,0.35)]">
             <span
               className="font-cinzel lux-text font-light"
-              style={{
-                fontSize: 'clamp(23px, 7vw, 35px)',
-              }}
+              style={{ fontSize: 'clamp(23px, 7vw, 35px)' }}
             >
               21
             </span>
@@ -216,9 +154,7 @@ export default function HeroSection() {
 
           <span
             className="font-script lux-text-muted"
-            style={{
-              fontSize: 'clamp(17px, 5.2vw, 27px)',
-            }}
+            style={{ fontSize: 'clamp(17px, 5.2vw, 27px)' }}
           >
             2026
           </span>
@@ -227,47 +163,31 @@ export default function HeroSection() {
         {/* Time */}
         <motion.p
           className="font-cinzel text-xs tracking-[0.3em] lux-text-faint uppercase"
-          style={{
-            marginBottom: '6px',
-          }}
+          style={{ marginBottom: '6px' }}
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{
-            delay: 1.2,
-            duration: 0.8,
-          }}
+          transition={{ delay: 1.2, duration: 0.8 }}
         >
           7:00 PM
         </motion.p>
 
         {/* Location */}
         <motion.div
-          style={{
-            marginBottom: '10px',
-          }}
+          style={{ marginBottom: '10px' }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{
-            delay: 1.3,
-            duration: 0.8,
-          }}
+          transition={{ delay: 1.3, duration: 0.8 }}
         >
           <p
             className="font-serif-elegant tracking-widest uppercase lux-text-soft"
-            style={{
-              fontSize: 'clamp(9px, 2.5vw, 13px)',
-            }}
+            style={{ fontSize: 'clamp(9px, 2.5vw, 13px)' }}
           >
             The Westin Cairo Golf Resort and Spa
           </p>
 
           <p
-            className="font-arabic normal-case lux-text-soft mt-1"
-            style={{
-              fontSize: 'clamp(11px, 3vw, 15px)',
-              color: '#c9a96e',
-              WebkitTextFillColor: '#c9a96e',
-            }}
+            className="font-arabic arabic-gold normal-case mt-1"
+            style={{ fontSize: 'clamp(11px, 3vw, 15px)' }}
             dir="rtl"
           >
             القاهرة · فندق ويستن كايرو
@@ -279,10 +199,7 @@ export default function HeroSection() {
           className="flex flex-col items-center gap-1"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{
-            delay: 1.6,
-            duration: 0.8,
-          }}
+          transition={{ delay: 1.6, duration: 0.8 }}
         >
           <span className="font-serif-elegant text-xs tracking-widest lux-text-faint uppercase">
             scroll to explore
@@ -290,13 +207,8 @@ export default function HeroSection() {
 
           <motion.div
             className="w-px h-6 bg-gradient-to-b from-[#c9a96e]/70 to-transparent"
-            animate={{
-              scaleY: [0.5, 1, 0.5],
-            }}
-            transition={{
-              duration: 2,
-              repeat: Infinity,
-            }}
+            animate={{ scaleY: [0.5, 1, 0.5] }}
+            transition={{ duration: 2, repeat: Infinity }}
           />
         </motion.div>
       </motion.div>
@@ -322,52 +234,18 @@ function BottomFloralBorder() {
         fill="url(#bottomGrad)"
         opacity="0.15"
       />
-
       {[80, 200, 320, 480, 600, 720].map((x, i) => (
         <g key={i} transform={`translate(${x}, 50)`}>
           <circle cx="0" cy="-10" r="8" fill="#c9a96e" opacity="0.2" />
           <circle cx="-8" cy="0" r="6" fill="#c9a96e" opacity="0.15" />
           <circle cx="8" cy="0" r="6" fill="#c9a96e" opacity="0.15" />
-
-          <rect
-            x="-1"
-            y="0"
-            width="2"
-            height="20"
-            fill="#c9a96e"
-            opacity="0.2"
-          />
-
-          <ellipse
-            cx="-6"
-            cy="12"
-            rx="6"
-            ry="3"
-            transform="rotate(-30 -6 12)"
-            fill="#c9a96e"
-            opacity="0.15"
-          />
-
-          <ellipse
-            cx="6"
-            cy="12"
-            rx="6"
-            ry="3"
-            transform="rotate(30 6 12)"
-            fill="#c9a96e"
-            opacity="0.15"
-          />
+          <rect x="-1" y="0" width="2" height="20" fill="#c9a96e" opacity="0.2" />
+          <ellipse cx="-6" cy="12" rx="6" ry="3" transform="rotate(-30 -6 12)" fill="#c9a96e" opacity="0.15" />
+          <ellipse cx="6" cy="12" rx="6" ry="3" transform="rotate(30 6 12)" fill="#c9a96e" opacity="0.15" />
         </g>
       ))}
-
       <defs>
-        <linearGradient
-          id="bottomGrad"
-          x1="0%"
-          y1="0%"
-          x2="0%"
-          y2="100%"
-        >
+        <linearGradient id="bottomGrad" x1="0%" y1="0%" x2="0%" y2="100%">
           <stop offset="0%" stopColor="#c9a96e" stopOpacity="0" />
           <stop offset="100%" stopColor="#c9a96e" stopOpacity="1" />
         </linearGradient>
