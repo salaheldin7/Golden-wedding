@@ -7,14 +7,14 @@
 }
 
 :root {
-  --lux-burgundy-950: #120204;
-  --lux-burgundy-900: #1b0509;
-  --lux-burgundy-800: #2a0a12;
-  --lux-burgundy-700: #3b0f1a;
-  --lux-burgundy-600: #4a1320;
-  --lux-ivory-100: #f8f1e8;
-  --lux-ivory-200: #ead8c5;
-  --lux-ivory-300: #d4bfa5;
+  --lux-burgundy-950: #fbf6ee;
+  --lux-burgundy-900: #f4e9d8;
+  --lux-burgundy-800: #eedcc7;
+  --lux-burgundy-700: #e4ceb0;
+  --lux-burgundy-600: #d7bb97;
+  --lux-ivory-100: #3b2a1a;
+  --lux-ivory-200: #5a4632;
+  --lux-ivory-300: #7a6145;
   --lux-gold-400: #e6c98a;
   --lux-gold-500: #c9a96e;
 }
@@ -25,7 +25,7 @@ html {
 
 body {
   font-family: 'Cormorant Garamond', serif;
-  background: linear-gradient(180deg, #120204 0%, #1b0509 60%, #0c0204 100%);
+  background: linear-gradient(180deg, #fbf6ee 0%, #f4e8d6 55%, #ead7bf 100%);
   color: var(--lux-ivory-100);
   overflow-x: hidden;
 }
@@ -63,7 +63,7 @@ body {
 }
 
 .lux-text-faint {
-  color: rgba(248, 241, 232, 0.7);
+  color: rgba(59, 42, 26, 0.65);
 }
 
 .lux-text-gold {
@@ -71,9 +71,9 @@ body {
 }
 
 .lux-panel {
-  background: linear-gradient(135deg, #2a0a12 0%, #1b0509 100%);
-  border: 1px solid rgba(201, 169, 110, 0.25);
-  box-shadow: 0 14px 46px rgba(5, 2, 4, 0.6);
+  background: linear-gradient(135deg, #f7efe2 0%, #f0e2cf 100%);
+  border: 1px solid rgba(201, 169, 110, 0.35);
+  box-shadow: 0 14px 40px rgba(90, 70, 50, 0.18);
 }
 
 /* Envelope styles */
@@ -146,9 +146,9 @@ body {
 
 /* Paper texture overlay */
 .paper-texture {
-  background-color: #1b0509;
+  background-color: #f3e7d6;
   background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Crect width='4' height='4' fill='%231b0509'/%3E%3Ccircle cx='1' cy='1' r='0.5' fill='%232a0a12' opacity='0.5'/%3E%3C/svg%3E");
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Crect width='4' height='4' fill='%23f3e7d6'/%3E%3Ccircle cx='1' cy='1' r='0.5' fill='%23e6d5bf' opacity='0.6'/%3E%3C/svg%3E");
 }
 
 /* 3D envelope open animation */
@@ -194,7 +194,7 @@ section {
 }
 
 ::-webkit-scrollbar-track {
-  background: #140507;
+  background: #efe4d4;
 }
 
 ::-webkit-scrollbar-thumb {

@@ -5,7 +5,7 @@ export default function HeroSection() {
     <section
       className="min-h-[100svh] sm:min-h-[110vh] flex flex-col items-center justify-start relative overflow-hidden"
       style={{
-        background: 'linear-gradient(180deg, #1b0509 0%, #2a0a12 55%, #140507 100%)',
+        background: 'linear-gradient(180deg, #fbf6ee 0%, #f2e5d4 55%, #ead7bf 100%)',
       }}
     >
       {/* Background image */}

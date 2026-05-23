@@ -54,7 +54,7 @@ export default function RSVPSection() {
     <section
       ref={ref}
       className="relative py-24 px-6"
-      style={{ background: 'linear-gradient(180deg, #1b0509 0%, #2a0a12 55%, #140507 100%)' }}
+      style={{ background: 'linear-gradient(180deg, #fbf6ee 0%, #f2e5d4 55%, #ead7bf 100%)' }}
     >
       <div className="max-w-md mx-auto relative z-10">
         <motion.div
@@ -113,7 +113,7 @@ export default function RSVPSection() {
                   required
                   value={form.name}
                   onChange={e => setForm({ ...form, name: e.target.value })}
-                  className="w-full bg-transparent border-b border-[rgba(248,241,232,0.25)] focus:border-[#e6c98a] outline-none font-serif-elegant text-[#f8f1e8] placeholder:text-[#d8c3aa]/60 py-2 text-base transition-colors"
+                  className="w-full bg-transparent border-b border-[rgba(90,70,50,0.25)] focus:border-[#e6c98a] outline-none font-serif-elegant text-[#3b2a1a] placeholder:text-[#9b8369]/70 py-2 text-base transition-colors"
                   placeholder="Your name..."
                 />
               </div>
@@ -136,8 +136,8 @@ export default function RSVPSection() {
                       onClick={() => setForm({ ...form, attending: v })}
                       className={`flex-1 py-2 border transition-all font-cinzel text-xs tracking-widest uppercase ${
                         form.attending === v
-                          ? 'border-[#e6c98a] bg-[#3b0f1a] text-[#f8f1e8] shadow-[0_10px_24px_rgba(5,2,4,0.45)]'
-                          : 'border-[rgba(248,241,232,0.25)] text-[#e8d7c2] hover:border-[#e6c98a]'
+                          ? 'border-[#c9a96e] bg-[#f2e1c7] text-[#3b2a1a] shadow-[0_10px_24px_rgba(120,90,60,0.2)]'
+                          : 'border-[rgba(90,70,50,0.25)] text-[#6f5438] hover:border-[#c9a96e]'
                       }`}
                     >
                       {v === 'yes' ? 'Joyfully accepts' : 'Regretfully declines'}
@@ -168,7 +168,7 @@ export default function RSVPSection() {
                         guests: e.target.value.replace(/[^0-9]/g, ''),
                       })
                     }
-                    className="w-full bg-transparent border-b border-[rgba(248,241,232,0.25)] focus:border-[#e6c98a] outline-none font-serif-elegant text-[#f8f1e8] placeholder:text-[#d8c3aa]/60 py-2 text-base transition-colors"
+                    className="w-full bg-transparent border-b border-[rgba(90,70,50,0.25)] focus:border-[#e6c98a] outline-none font-serif-elegant text-[#3b2a1a] placeholder:text-[#9b8369]/70 py-2 text-base transition-colors"
                     placeholder="0"
                   />
                 </div>
@@ -188,7 +188,7 @@ export default function RSVPSection() {
                   value={form.message}
                   onChange={e => setForm({ ...form, message: e.target.value })}
                   rows={3}
-                  className="w-full bg-transparent border-b border-[rgba(248,241,232,0.25)] focus:border-[#e6c98a] outline-none font-serif-elegant text-[#f8f1e8] placeholder:text-[#d8c3aa]/60 py-2 text-base resize-none transition-colors"
+                  className="w-full bg-transparent border-b border-[rgba(90,70,50,0.25)] focus:border-[#e6c98a] outline-none font-serif-elegant text-[#3b2a1a] placeholder:text-[#9b8369]/70 py-2 text-base resize-none transition-colors"
                   placeholder="Your warm wishes..."
                 />
               </div>
@@ -197,17 +197,17 @@ export default function RSVPSection() {
             <button
               type="submit"
               disabled={status === 'loading'}
-              className="w-full py-4 font-cinzel text-sm tracking-widest uppercase text-[#f8f1e8] transition-all hover:opacity-90 active:scale-98"
+              className="w-full py-4 font-cinzel text-sm tracking-widest uppercase text-[#3b2a1a] transition-all hover:opacity-90 active:scale-98"
               style={{
-                background: 'linear-gradient(135deg, #7a1f2c 0%, #c9a96e 45%, #5f1522 100%)',
-                boxShadow: '0 6px 26px rgba(7, 2, 4, 0.6)',
+                background: 'linear-gradient(135deg, #f7e9d3 0%, #e6c98a 45%, #d3b27c 100%)',
+                boxShadow: '0 10px 24px rgba(110, 85, 55, 0.25)',
               }}
             >
               {status === 'loading' ? 'Sending...' : 'Send My Response'}
             </button>
 
             {status === 'error' && (
-              <div className="text-sm text-[#e8d7c2] text-center">
+              <div className="text-sm lux-text-muted text-center">
                 {errorMessage}
               </div>
             )}

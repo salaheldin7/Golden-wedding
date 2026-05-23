@@ -14,7 +14,7 @@ export default function LocationSection() {
     <section
       ref={ref}
       className="relative py-24 px-6"
-      style={{ background: 'linear-gradient(180deg, #1b0509 0%, #2a0a12 55%, #140507 100%)' }}
+      style={{ background: 'linear-gradient(180deg, #fbf6ee 0%, #f2e5d4 55%, #ead7bf 100%)' }}
     >
       <div className="max-w-3xl mx-auto relative z-10">
         <motion.div
@@ -55,7 +55,7 @@ export default function LocationSection() {
           </div>
           <div className="mt-4 text-center">
             <a
-              className="font-serif-elegant text-xs tracking-widest uppercase text-[#e8d7c2] hover:text-[#f8f1e8]"
+              className="font-serif-elegant text-xs tracking-widest uppercase lux-text-muted hover:text-[#4b3520]"
               href={MAP_LINK}
               target="_blank"
               rel="noreferrer"

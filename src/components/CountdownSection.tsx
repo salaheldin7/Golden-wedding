@@ -66,7 +66,7 @@ export default function CountdownSection() {
       ref={ref}
       className="relative px-4 overflow-hidden"
       style={{
-        background: 'linear-gradient(180deg, #1b0509 0%, #2a0a12 55%, #140507 100%)',
+        background: 'linear-gradient(180deg, #fbf6ee 0%, #f2e5d4 55%, #ead7bf 100%)',
         paddingTop: 0,
         paddingBottom: '1rem',
         marginTop: 0,

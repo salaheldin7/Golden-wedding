@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 export default function FooterSection() {
   return (
     <footer
-      className="relative py-20 px-6 overflow-hidden"
-      style={{ background: 'linear-gradient(180deg, #1b0509 0%, #120204 100%)' }}
+      className="relative py-9 px-6 overflow-hidden"
+      style={{ background: 'linear-gradient(180deg, #f2e5d4 0%, #ead7bf 100%)' }}
     >
       <div
         className="absolute inset-0"
@@ -12,19 +12,20 @@ export default function FooterSection() {
           backgroundImage: 'url(/logo/footer%20red.JPG)',
           backgroundSize: 'cover',
           backgroundPosition: 'center bottom',
-          opacity: 1,
+          opacity: 0.25,
+          filter: 'sepia(0.35) saturate(0.75) brightness(1.15)',
         }}
       />
       <div
         className="absolute inset-0"
         style={{
-          background: 'linear-gradient(180deg, rgba(12,2,4,0.6) 0%, rgba(18,5,9,0.65) 100%)',
+          background: 'linear-gradient(180deg, rgba(247,240,230,0.88) 0%, rgba(236,220,198,0.92) 100%)',
         }}
       />
       {/* Floral border top */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#c9a96e] to-transparent opacity-40" />
 
-      <div className="max-w-md mx-auto text-center relative z-10 -translate-y-28 sm:-translate-y-32">
+      <div className="max-w-md mx-auto text-center relative z-10 -translate-y-16 sm:-translate-y-20">
         <div className="mb-1 relative top-6 sm:top-10">
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
@@ -81,7 +82,7 @@ export default function FooterSection() {
       </div>
 
       {/* Bottom floral */}
-      <div className="absolute bottom-0 left-0 right-0 h-12 opacity-20 pointer-events-none">
+      <div className="absolute bottom-0 left-0 right-0 h-8 opacity-20 pointer-events-none">
         <svg className="w-full h-full" viewBox="0 0 800 48" preserveAspectRatio="xMidYMid slice">
           <path d="M0 0 Q200 48 400 24 Q600 0 800 24" stroke="#c9a96e" strokeWidth="1" fill="none" />
         </svg>
