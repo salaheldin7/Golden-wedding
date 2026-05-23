@@ -76,7 +76,7 @@ export default function CountdownSection() {
         </svg>
       </div>
 
-      <div className="max-w-lg mx-auto text-center relative z-10 mt-12 sm:mt-16">
+      <div className="max-w-lg mx-auto text-center relative z-10 mt-4 sm:mt-16">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}

@@ -168,12 +168,19 @@ body {
 }
 
 .shimmer-text {
-  background: linear-gradient(90deg, #8b6914 0%, #c9a96e 30%, #f0d090 50%, #c9a96e 70%, #8b6914 100%);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--lux-gold-500);
   animation: shimmer 4s linear infinite;
+}
+
+@supports (-webkit-background-clip: text) or (background-clip: text) {
+  .shimmer-text {
+    background: linear-gradient(90deg, #8b6914 0%, #c9a96e 30%, #f0d090 50%, #c9a96e 70%, #8b6914 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
 }
 
 /* Smooth section transitions */
