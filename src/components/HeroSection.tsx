@@ -144,7 +144,7 @@ export default function HeroSection() {
           }}
         >
           <h1
-            className="font-script shimmer-text leading-tight px-2"
+            className="font-script leading-tight px-2"
             style={{
               fontSize: 'clamp(31px, 8.5vw, 52px)',
               color: '#c9a96e',
