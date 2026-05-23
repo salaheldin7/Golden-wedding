@@ -117,6 +117,8 @@ export default function HeroSection() {
           style={{
             fontSize: 'clamp(12px, 3.5vw, 16px)',
             marginBottom: '5px',
+            color: '#c9a96e',
+            WebkitTextFillColor: '#c9a96e',
           }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -145,6 +147,8 @@ export default function HeroSection() {
             className="font-script shimmer-text leading-tight px-2"
             style={{
               fontSize: 'clamp(31px, 8.5vw, 52px)',
+              color: '#c9a96e',
+              WebkitTextFillColor: '#c9a96e',
             }}
           >
             Karim & Nada
@@ -155,6 +159,8 @@ export default function HeroSection() {
               fontSize: 'clamp(19px, 5.5vw, 29px)',
               marginTop: '-4px',
               animationDuration: '6s',
+              color: '#c9a96e',
+              WebkitTextFillColor: '#c9a96e',
             }}
             dir="rtl"
           >
@@ -260,6 +266,8 @@ export default function HeroSection() {
             className="font-arabic normal-case lux-text-soft mt-1"
             style={{
               fontSize: 'clamp(11px, 3vw, 15px)',
+              color: '#c9a96e',
+              WebkitTextFillColor: '#c9a96e',
             }}
             dir="rtl"
           >
