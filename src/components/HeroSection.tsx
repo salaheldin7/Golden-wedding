@@ -23,7 +23,7 @@ export default function HeroSection() {
           backgroundImage: 'url(/logo/backgroundsection2.PNG)',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center top',
-          backgroundSize: 'contain',
+          backgroundSize: '105%',
           opacity: 0.22,
           filter: 'brightness(0.85) saturate(0.8)',
         }}
