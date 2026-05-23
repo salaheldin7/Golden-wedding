@@ -9,12 +9,6 @@ export default function HeroSection() {
       }}
     >
       {/* ✅ Nuclear fix for iOS red Arabic text */}
-      <style>{`
-        .arabic-gold {
-          color: #c9a96e !important;
-          -webkit-text-fill-color: #c9a96e !important;
-        }
-      `}</style>
 
       {/* Background image */}
       <div
@@ -109,7 +103,7 @@ export default function HeroSection() {
             Karim & Nada
           </h1>
 
-          {/* Arabic names — shimmer-text fully removed, arabic-gold forces gold on iOS */}
+         
           <p
             className="font-basmala arabic-gold"
             style={{ fontSize: 'clamp(19px, 5.5vw, 29px)', marginTop: '-4px' }}
