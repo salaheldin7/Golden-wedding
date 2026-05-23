@@ -153,19 +153,18 @@ export default function HeroSection() {
           >
             Karim & Nada
           </h1>
-          <p
-            className="font-basmala shimmer-text"
-            style={{
-              fontSize: 'clamp(19px, 5.5vw, 29px)',
-              marginTop: '-4px',
-              animationDuration: '6s',
-              color: '#c9a96e',
-              WebkitTextFillColor: '#c9a96e',
-            }}
-            dir="rtl"
-          >
-            كريم يوسف و ندى هشام
-          </p>
+         <p
+    className="font-basmala"
+    style={{
+      fontSize: 'clamp(19px, 5.5vw, 29px)',
+      marginTop: '-4px',
+      color: '#c9a96e',
+      WebkitTextFillColor: '#c9a96e',
+    }}
+    dir="rtl"
+  >
+    كريم يوسف و ندى هشام
+  </p>
         </motion.div>
 
         {/* Divider */}
