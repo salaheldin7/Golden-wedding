@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 export default function HeroSection() {
   return (
     <section
-      className="min-h-[85svh] sm:min-h-[90vh] flex flex-col items-center justify-start relative overflow-hidden"
+      className="min-h-[82svh] sm:min-h-[87vh] flex flex-col items-center justify-start relative overflow-hidden"
       style={{
         background: 'linear-gradient(180deg, #fbf6ee 0%, #f2e5d4 55%, #ead7bf 100%)',
       }}
@@ -29,10 +29,10 @@ export default function HeroSection() {
         "
         style={{
           paddingTop: '0px',
-          paddingBottom: '16px',
+          paddingBottom: '12px',
         }}
         initial={{ opacity: 0, y: -220 }}
-        animate={{ opacity: 1, y: -20 }}
+        animate={{ opacity: 1, y: -15 }}
         transition={{
           duration: 1.2,
           ease: [0.22, 1, 0.36, 1],
@@ -44,8 +44,8 @@ export default function HeroSection() {
           alt="Basmala"
           className="w-44 sm:w-64 mx-auto opacity-90 pointer-events-none"
           style={{
-            marginTop: '8px',
-            marginBottom: '-24px',
+            marginTop: '6px',
+            marginBottom: '-26px',
           }}
           initial={{ opacity: 0, y: -28 }}
           animate={{ opacity: 1, y: -6 }}
@@ -59,8 +59,8 @@ export default function HeroSection() {
         <motion.div
           className="golden-divider w-36 sm:w-44"
           style={{
-            marginTop: '-18px',
-            marginBottom: '-6px',
+            marginTop: '-20px',
+            marginBottom: '-8px',
           }}
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
@@ -73,7 +73,7 @@ export default function HeroSection() {
         {/* Center logo */}
         <motion.div
           style={{
-            marginBottom: '-4px',
+            marginBottom: '-6px',
           }}
           initial={{ scale: 0, rotate: -180 }}
           animate={{ scale: 1, rotate: 0 }}
@@ -88,7 +88,7 @@ export default function HeroSection() {
             src="/logo/logo2.PNG"
             alt="Karim and Nada monogram"
             style={{
-              width: 'clamp(48px, 12vw, 84px)',
+              width: 'clamp(46px, 11vw, 80px)',
             }}
             className="opacity-70 mx-auto"
           />
@@ -98,8 +98,8 @@ export default function HeroSection() {
         <motion.p
           className="font-script lux-text-muted"
           style={{
-            fontSize: 'clamp(24px, 7vw, 36px)',
-            marginBottom: '-1px',
+            fontSize: 'clamp(23px, 6.5vw, 34px)',
+            marginBottom: '-2px',
           }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -116,7 +116,7 @@ export default function HeroSection() {
           className="font-arabic lux-text-soft"
           style={{
             fontSize: 'clamp(12px, 3.5vw, 16px)',
-            marginBottom: '6px',
+            marginBottom: '5px',
           }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -132,7 +132,7 @@ export default function HeroSection() {
         {/* Names */}
         <motion.div
           style={{
-            marginBottom: '4px',
+            marginBottom: '3px',
           }}
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -144,7 +144,7 @@ export default function HeroSection() {
           <h1
             className="font-script shimmer-text leading-tight px-2"
             style={{
-              fontSize: 'clamp(32px, 9vw, 54px)',
+              fontSize: 'clamp(31px, 8.5vw, 52px)',
             }}
           >
             Karim & Nada
@@ -152,8 +152,8 @@ export default function HeroSection() {
           <p
             className="font-basmala shimmer-text"
             style={{
-              fontSize: 'clamp(20px, 6vw, 30px)',
-              marginTop: '-3px',
+              fontSize: 'clamp(19px, 5.5vw, 29px)',
+              marginTop: '-4px',
               animationDuration: '6s',
             }}
             dir="rtl"
@@ -166,7 +166,7 @@ export default function HeroSection() {
         <motion.div
           className="golden-divider w-48 sm:w-60"
           style={{
-            marginBottom: '8px',
+            marginBottom: '6px',
           }}
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
@@ -180,7 +180,7 @@ export default function HeroSection() {
         <motion.div
           className="flex w-full items-center justify-center gap-3 sm:gap-5"
           style={{
-            marginBottom: '3px',
+            marginBottom: '2px',
           }}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -192,7 +192,7 @@ export default function HeroSection() {
           <span
             className="font-script lux-text-muted"
             style={{
-              fontSize: 'clamp(18px, 5.5vw, 28px)',
+              fontSize: 'clamp(17px, 5.2vw, 27px)',
             }}
           >
             August
@@ -202,7 +202,7 @@ export default function HeroSection() {
             <span
               className="font-cinzel lux-text font-light"
               style={{
-                fontSize: 'clamp(24px, 7.5vw, 36px)',
+                fontSize: 'clamp(23px, 7vw, 35px)',
               }}
             >
               21
@@ -212,7 +212,7 @@ export default function HeroSection() {
           <span
             className="font-script lux-text-muted"
             style={{
-              fontSize: 'clamp(18px, 5.5vw, 28px)',
+              fontSize: 'clamp(17px, 5.2vw, 27px)',
             }}
           >
             2026
@@ -223,7 +223,7 @@ export default function HeroSection() {
         <motion.p
           className="font-cinzel text-xs tracking-[0.3em] lux-text-faint uppercase"
           style={{
-            marginBottom: '8px',
+            marginBottom: '6px',
           }}
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
@@ -238,7 +238,7 @@ export default function HeroSection() {
         {/* Location */}
         <motion.div
           style={{
-            marginBottom: '12px',
+            marginBottom: '10px',
           }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -295,7 +295,7 @@ export default function HeroSection() {
       </motion.div>
 
       {/* Bottom floral border */}
-      <div className="absolute bottom-0 left-0 right-0 h-16 sm:h-20 pointer-events-none z-0">
+      <div className="absolute bottom-0 left-0 right-0 h-14 sm:h-18 pointer-events-none z-0">
         <BottomFloralBorder />
       </div>
     </section>
