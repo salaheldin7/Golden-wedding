@@ -1,4 +1,27 @@
+import { useEffect, useState } from 'react';
+
 export default function VideoIntroSection() {
+  const [showVideo, setShowVideo] = useState(true);
+
+  useEffect(() => {
+    if (typeof navigator === 'undefined') {
+      return;
+    }
+
+    const connection = (
+      navigator as Navigator & {
+        connection?: { saveData?: boolean; effectiveType?: string };
+      }
+    ).connection;
+
+    const prefersReducedData = connection?.saveData === true;
+    const slowConnection = ['slow-2g', '2g'].includes(connection?.effectiveType ?? '');
+
+    if (prefersReducedData || slowConnection) {
+      setShowVideo(false);
+    }
+  }, []);
+
   return (
     <section
       className="relative min-h-screen w-full overflow-hidden"
@@ -6,16 +29,29 @@ export default function VideoIntroSection() {
         background: 'linear-gradient(180deg, #120204 0%, #f594a6 60%, #22060c 100%)',
       }}
     >
-      <video
-        className="absolute inset-0 h-full w-full object-cover"
-        src="/videos/home.mp4"
-        style={{ filter: 'saturate(1.05) brightness(0.82) contrast(1.08)' }}
-        autoPlay
-        loop
-        muted
-        playsInline
-        preload="metadata"
-      />
+      {showVideo ? (
+        <video
+          className="absolute inset-0 h-full w-full object-cover"
+          src="/videos/home.mp4"
+          poster="/videos/home-poster.jpg"
+          style={{ filter: 'saturate(1.05) brightness(0.82) contrast(1.08)' }}
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="metadata"
+          onError={() => setShowVideo(false)}
+        />
+      ) : (
+        <img
+          className="absolute inset-0 h-full w-full object-cover"
+          src="/videos/home-poster.jpg"
+          alt="Karim and Nada invitation background"
+          style={{ filter: 'saturate(1.05) brightness(0.82) contrast(1.08)' }}
+          loading="eager"
+          decoding="async"
+        />
+      )}
       <div
         className="absolute inset-0"
         style={{

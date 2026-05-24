@@ -3,30 +3,29 @@ import { motion } from 'framer-motion';
 export default function FooterSection() {
   return (
     <footer
-      className="relative py-9 px-6 overflow-hidden"
-      style={{ background: 'linear-gradient(180deg, #f2e5d4 0%, #ead7bf 100%)' }}
+      className="relative py-9 px-6 min-h-[520px] sm:min-h-[600px] overflow-hidden"
+      style={{
+        backgroundImage: 'url(/logo/footer%20red.JPG)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center bottom',
+        backgroundRepeat: 'no-repeat',
+      }}
     >
-      <div
-        className="absolute inset-0"
-        style={{
-          backgroundImage: 'url(/logo/footer%20red.JPG)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center bottom',
-          opacity: 0.25,
-          filter: 'sepia(0.35) saturate(0.75) brightness(1.15)',
-        }}
-      />
-      <div
-        className="absolute inset-0"
-        style={{
-          background: 'linear-gradient(180deg, rgba(247,240,230,0.88) 0%, rgba(236,220,198,0.92) 100%)',
-        }}
-      />
       {/* Floral border top */}
-      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#c9a96e] to-transparent opacity-40" />
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#c9a96e] to-transparent opacity-85" />
 
       <div className="max-w-md mx-auto text-center relative z-10 -translate-y-16 sm:-translate-y-20">
-        <div className="mb-1 relative top-6 sm:top-10">
+        <motion.p
+          className="font-cinzel text-sm sm:text-base font-semibold tracking-widest lux-text-soft uppercase mt-14 sm:mt-16 mb-3"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.4, duration: 0.7 }}
+        >
+          21/8/2026 · Cairo, Egypt
+        </motion.p>
+
+        <div className="mb-1 relative top-2 sm:top-4">
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -36,20 +35,10 @@ export default function FooterSection() {
             <img
               src="/logo/logo2.PNG"
               alt="Karim and Nada monogram"
-              className="mx-auto w-24 sm:w-28 opacity-85"
+              className="mx-auto w-24 sm:w-28"
             />
           </motion.div>
         </div>
-
-        <motion.p
-          className="font-cinzel text-xs tracking-widest lux-text-soft uppercase mt-9 mb-3"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.4, duration: 0.7 }}
-        >
-          21/8/2026 · Cairo, Egypt
-        </motion.p>
 
         <motion.div
           className="golden-divider w-32 mx-auto mb-8"
