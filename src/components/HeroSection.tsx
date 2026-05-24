@@ -76,18 +76,6 @@ export default function HeroSection() {
           Save the Date
         </motion.p>
 
-        {/* Arabic subtitle — all color classes removed, arabic-gold applied */}
-        <motion.p
-          className="font-arabic arabic-gold"
-          style={{ fontSize: 'clamp(12px, 3.5vw, 16px)', marginBottom: '5px' }}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.8, duration: 0.8 }}
-          dir="rtl"
-        >
-          احفظوا التاريخ
-        </motion.p>
-
         {/* Names */}
         <motion.div
           style={{ marginBottom: '3px' }}
