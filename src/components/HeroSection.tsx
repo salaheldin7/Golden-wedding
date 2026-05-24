@@ -35,7 +35,7 @@ export default function HeroSection() {
           src="/logo/Basmala.png"
           alt="Basmala"
           className="w-44 sm:w-64 mx-auto opacity-90 pointer-events-none"
-          style={{ marginTop: '6px', marginBottom: '-26px' }}
+          style={{ marginTop: '6px', marginBottom: '12px' }}
           initial={{ opacity: 0, y: -28 }}
           animate={{ opacity: 1, y: -6 }}
           transition={{ delay: 0.2, duration: 1 }}
@@ -44,7 +44,7 @@ export default function HeroSection() {
         {/* Gold divider */}
         <motion.div
           className="golden-divider w-36 sm:w-44"
-          style={{ marginTop: '-20px', marginBottom: '-8px' }}
+          style={{ marginTop: '8px', marginBottom: '12px' }}
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
@@ -52,7 +52,8 @@ export default function HeroSection() {
 
         {/* Center logo */}
         <motion.div
-          style={{ marginBottom: '-6px' }}
+          className="-translate-y-2 sm:-translate-y-3"
+          style={{ marginBottom: '10px' }}
           initial={{ scale: 0, rotate: -180 }}
           animate={{ scale: 1, rotate: 0 }}
           transition={{ delay: 0.4, duration: 0.9, type: 'spring', damping: 14 }}
@@ -68,7 +69,7 @@ export default function HeroSection() {
         {/* Save the Date */}
         <motion.p
           className="font-script lux-text-muted"
-          style={{ fontSize: 'clamp(23px, 6.5vw, 34px)', marginBottom: '-2px' }}
+          style={{ fontSize: 'clamp(23px, 6.5vw, 34px)', marginBottom: '10px' }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.7, duration: 0.8 }}
@@ -78,7 +79,7 @@ export default function HeroSection() {
 
         {/* Names */}
         <motion.div
-          style={{ marginBottom: '3px' }}
+          style={{ marginBottom: '10px' }}
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.9, duration: 0.8 }}
@@ -94,7 +95,7 @@ export default function HeroSection() {
         {/* Divider */}
         <motion.div
           className="golden-divider w-48 sm:w-60"
-          style={{ marginBottom: '6px' }}
+          style={{ marginBottom: '12px' }}
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
           transition={{ delay: 1.0, duration: 0.8 }}
@@ -103,7 +104,7 @@ export default function HeroSection() {
         {/* Date row */}
         <motion.div
           className="flex w-full items-center justify-center gap-3 sm:gap-5"
-          style={{ marginBottom: '2px' }}
+          style={{ marginBottom: '10px' }}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.1, duration: 0.8 }}
@@ -135,7 +136,7 @@ export default function HeroSection() {
         {/* Time */}
         <motion.p
           className="font-cinzel text-xs tracking-[0.3em] lux-text-faint uppercase"
-          style={{ marginBottom: '6px' }}
+          style={{ marginBottom: '10px' }}
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.2, duration: 0.8 }}
@@ -145,7 +146,7 @@ export default function HeroSection() {
 
         {/* Location */}
         <motion.div
-          style={{ marginBottom: '10px' }}
+          style={{ marginBottom: '14px' }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.3, duration: 0.8 }}
