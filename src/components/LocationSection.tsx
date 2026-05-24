@@ -55,7 +55,7 @@ export default function LocationSection() {
           </div>
           <div className="mt-4 text-center">
             <a
-              className="font-serif-elegant text-xs tracking-widest uppercase lux-text-muted hover:text-[#4b3520]"
+              className="font-serif-elegant text-xs tracking-widest uppercase lux-text-muted hover:text-[#3b0f16]"
               href={MAP_LINK}
               target="_blank"
               rel="noreferrer"

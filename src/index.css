@@ -7,15 +7,15 @@
 }
 
 :root {
-  --lux-burgundy-950: #fbf6ee;
-  --lux-burgundy-900: #f4e9d8;
-  --lux-burgundy-800: #eedcc7;
-  --lux-burgundy-700: #e4ceb0;
-  --lux-burgundy-600: #d7bb97;
+  --lux-burgundy-950: #1f0509;
+  --lux-burgundy-900: #2a0a10;
+  --lux-burgundy-800: #3b0f16;
+  --lux-burgundy-700: #4c1520;
+  --lux-burgundy-600: #5a1a24;
 
-  --lux-ivory-100: #3b2a1a;
-  --lux-ivory-200: #5a4632;
-  --lux-ivory-300: #7a6145;
+  --lux-ivory-100: #3b0f16;
+  --lux-ivory-200: #5a1a24;
+  --lux-ivory-300: #7a2a34;
 
   --lux-gold-400: #e6c98a;
   --lux-gold-500: #c9a96e;
@@ -61,10 +61,11 @@ body {
   font-weight: 700;
   letter-spacing: 0.2px;
 
-  color: #c9a96e;
-  -webkit-text-fill-color: #c9a96e;
+  color: #8f3a4a;
 
-  text-shadow: 0 0 0.01px #c9a96e;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 
@@ -81,18 +82,18 @@ body {
 }
 
 .lux-text-faint {
-  color: rgba(59, 42, 26, 0.65);
+  color: rgba(59, 15, 22, 0.6);
 }
 
 .lux-text-gold {
-  color: var(--lux-gold-500);
+  color: #8f3a4a;
 }
 
-/* iOS Safari Arabic Gold Fix */
+/* iOS Safari Arabic Burgundy Fix */
 
 .arabic-gold {
-  color: #c9a96e !important;
-  -webkit-text-fill-color: #c9a96e !important;
+  color: #8f3a4a !important;
+  -webkit-text-fill-color: #8f3a4a !important;
 
   background: none !important;
   background-image: none !important;
@@ -264,7 +265,7 @@ body {
 }
 
 .shimmer-text {
-  color: #c9a96e;
+  color: #8f3a4a;
   animation: shimmer 4s ease-in-out infinite;
 }
 

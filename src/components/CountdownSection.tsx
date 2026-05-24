@@ -49,14 +49,14 @@ export default function CountdownSection() {
       label: 'Minutes',
       value: time.minutes,
       style: {
-        transform: 'translate(-50%, -50%) translate(calc(var(--orbit) * -1), calc(var(--orbit) * 0.1))',
+        transform: 'translate(-50%, -50%) translate(calc(var(--orbit) * -1), calc(var(--orbit) * 0.45))',
       },
     },
     {
       label: 'Seconds',
       value: time.seconds,
       style: {
-        transform: 'translate(-50%, -50%) translate(var(--orbit), calc(var(--orbit) * 0.1))',
+        transform: 'translate(-50%, -50%) translate(var(--orbit), calc(var(--orbit) * 0.45))',
       },
     },
   ];
@@ -68,7 +68,7 @@ export default function CountdownSection() {
       style={{
         background: 'linear-gradient(180deg, #fbf6ee 0%, #f2e5d4 55%, #ead7bf 100%)',
         paddingTop: 0,
-        paddingBottom: '1rem',
+        paddingBottom: '0.5rem',
         marginTop: 0,
       }}
     >
@@ -81,13 +81,13 @@ export default function CountdownSection() {
         </svg>
       </div>
 
-      <div className="max-w-lg mx-auto text-center relative z-10 mt-4 sm:mt-16">
+      <div className="max-w-lg mx-auto text-center relative z-10 mt-4 sm:mt-12">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="font-script text-5xl sm:text-6xl lux-text mb-1 mt-4">Countdown</h2>
+          <h2 className="font-script text-5xl sm:text-6xl lux-text mb-1 mt-8">Countdown</h2>
           <p className="font-arabic text-sm lux-text-soft" dir="rtl">
             العد التنازلي
           </p>
@@ -99,7 +99,7 @@ export default function CountdownSection() {
           </p>
         </motion.div>
 
-        <div className="relative mx-auto mt-0 w-[20rem] h-[20rem] sm:w-[24rem] sm:h-[24rem] [--orbit:6rem] sm:[--orbit:7.5rem]">
+        <div className="relative mx-auto mt-0 w-[18rem] h-[18rem] sm:w-[21rem] sm:h-[21rem] [--orbit:5.5rem] sm:[--orbit:6.5rem]">
           <div className="absolute inset-0 z-10">
             {orbitItems.map((item, i) => (
               <CountdownOrbitItem
@@ -118,7 +118,7 @@ export default function CountdownSection() {
               animate={inView ? { opacity: 1, scale: 1 } : {}}
               transition={{ delay: 0.45, duration: 0.6 }}
             >
-              <img src="/logo/logo.png" alt="Monogram" className="w-[10rem] sm:w-[12rem] opacity-90" />
+              <img src="/logo/logo.png" alt="Monogram" className="w-[9rem] sm:w-[11rem] opacity-90" />
             </motion.div>
           </div>
         </div>

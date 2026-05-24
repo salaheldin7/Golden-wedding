@@ -139,10 +139,10 @@ export default function EnvelopeIntro({
               
               <div className="relative py-1.5 px-5">
                 <span
-                  className="tracking-[0.5em] uppercase text-xs sm:text-sm font-bold text-[#f5deb3]"
+                  className="tracking-[0.5em] uppercase text-xs sm:text-sm font-bold text-[#b35f6d]"
                   style={{
                     fontFamily: 'Cinzel, Georgia, serif',
-                    textShadow: '0 0 25px rgba(245,222,179,0.4), 0 2px 10px rgba(0,0,0,0.95)'
+                    textShadow: '0 0 25px rgba(179, 95, 109, 0.4), 0 2px 10px rgba(0,0,0,0.95)'
                   }}
                 >
                   Begin Experience

@@ -113,7 +113,7 @@ export default function RSVPSection() {
                   required
                   value={form.name}
                   onChange={e => setForm({ ...form, name: e.target.value })}
-                  className="w-full bg-transparent border-b border-[rgba(90,70,50,0.25)] focus:border-[#e6c98a] outline-none font-serif-elegant text-[#3b2a1a] placeholder:text-[#9b8369]/70 py-2 text-base transition-colors"
+                  className="w-full bg-transparent border-b border-[rgba(90,70,50,0.25)] focus:border-[#e6c98a] outline-none font-serif-elegant text-[#3b0f16] placeholder:text-[#8f3a4a]/70 py-2 text-base transition-colors"
                   placeholder="Your name..."
                 />
               </div>
@@ -136,8 +136,8 @@ export default function RSVPSection() {
                       onClick={() => setForm({ ...form, attending: v })}
                       className={`flex-1 py-2 border transition-all font-cinzel text-xs tracking-widest uppercase ${
                         form.attending === v
-                          ? 'border-[#c9a96e] bg-[#f2e1c7] text-[#3b2a1a] shadow-[0_10px_24px_rgba(120,90,60,0.2)]'
-                          : 'border-[rgba(90,70,50,0.25)] text-[#6f5438] hover:border-[#c9a96e]'
+                          ? 'border-[#c9a96e] bg-[#f2e1c7] text-[#3b0f16] shadow-[0_10px_24px_rgba(120,90,60,0.2)]'
+                          : 'border-[rgba(90,70,50,0.25)] text-[#7a2a34] hover:border-[#c9a96e]'
                       }`}
                     >
                       {v === 'yes' ? 'Joyfully accepts' : 'Regretfully declines'}
@@ -168,7 +168,7 @@ export default function RSVPSection() {
                         guests: e.target.value.replace(/[^0-9]/g, ''),
                       })
                     }
-                    className="w-full bg-transparent border-b border-[rgba(90,70,50,0.25)] focus:border-[#e6c98a] outline-none font-serif-elegant text-[#3b2a1a] placeholder:text-[#9b8369]/70 py-2 text-base transition-colors"
+                    className="w-full bg-transparent border-b border-[rgba(90,70,50,0.25)] focus:border-[#e6c98a] outline-none font-serif-elegant text-[#3b0f16] placeholder:text-[#8f3a4a]/70 py-2 text-base transition-colors"
                     placeholder="0"
                   />
                 </div>
@@ -188,7 +188,7 @@ export default function RSVPSection() {
                   value={form.message}
                   onChange={e => setForm({ ...form, message: e.target.value })}
                   rows={3}
-                  className="w-full bg-transparent border-b border-[rgba(90,70,50,0.25)] focus:border-[#e6c98a] outline-none font-serif-elegant text-[#3b2a1a] placeholder:text-[#9b8369]/70 py-2 text-base resize-none transition-colors"
+                  className="w-full bg-transparent border-b border-[rgba(90,70,50,0.25)] focus:border-[#e6c98a] outline-none font-serif-elegant text-[#3b0f16] placeholder:text-[#8f3a4a]/70 py-2 text-base resize-none transition-colors"
                   placeholder="Your warm wishes..."
                 />
               </div>
@@ -197,7 +197,7 @@ export default function RSVPSection() {
             <button
               type="submit"
               disabled={status === 'loading'}
-              className="w-full py-4 font-cinzel text-sm tracking-widest uppercase text-[#3b2a1a] transition-all hover:opacity-90 active:scale-98"
+              className="w-full py-4 font-cinzel text-sm tracking-widest uppercase text-[#3b0f16] transition-all hover:opacity-90 active:scale-98"
               style={{
                 background: 'linear-gradient(135deg, #f7e9d3 0%, #e6c98a 45%, #d3b27c 100%)',
                 boxShadow: '0 10px 24px rgba(110, 85, 55, 0.25)',
@@ -227,7 +227,7 @@ function WaxSealSmall() {
         fill="url(#sealGrad2)"
       />
       <circle cx="40" cy="37" r="20" fill="none" stroke="rgba(255,255,255,0.3)" strokeWidth="1.5" />
-      <text x="40" y="43" textAnchor="middle" fontFamily="'Great Vibes', cursive" fontSize="14" fill="rgba(255,255,255,0.6)">
+      <text x="40" y="43" textAnchor="middle" fontFamily="'Great Vibes', cursive" fontSize="14" fill="rgba(143, 58, 74, 0.7)">
         K N
       </text>
       <defs>

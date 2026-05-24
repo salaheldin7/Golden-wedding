@@ -42,7 +42,7 @@ export default function FooterSection() {
         </div>
 
         <motion.p
-          className="font-cinzel text-xs tracking-widest lux-text-soft uppercase mb-3"
+          className="font-cinzel text-xs tracking-widest lux-text-soft uppercase mt-9 mb-3"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}

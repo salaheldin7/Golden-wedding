@@ -8,7 +8,6 @@ export default function HeroSection() {
         background: 'linear-gradient(180deg, #fbf6ee 0%, #f2e5d4 55%, #ead7bf 100%)',
       }}
     >
-      {/* ✅ Nuclear fix for iOS red Arabic text */}
 
       {/* Background image */}
       <div
@@ -102,15 +101,6 @@ export default function HeroSection() {
           >
             Karim & Nada
           </h1>
-
-         
-          <p
-            className="font-basmala arabic-gold"
-            style={{ fontSize: 'clamp(19px, 5.5vw, 29px)', marginTop: '-4px' }}
-            dir="rtl"
-          >
-            كريم يوسف و ندى هشام
-          </p>
         </motion.div>
 
         {/* Divider */}
