@@ -25,7 +25,7 @@ export default function HeroSection() {
       {/* Main Content */}
       <motion.div
         className="relative z-10 flex flex-col items-center text-center px-6 w-full max-w-lg mx-auto"
-        style={{ paddingTop: '273px', paddingBottom: '12px' }}
+        style={{ paddingTop: '315px', paddingBottom: '12px' }}
         initial={{ opacity: 0, y: -220 }}
         animate={{ opacity: 1, y: -15 }}
         transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
