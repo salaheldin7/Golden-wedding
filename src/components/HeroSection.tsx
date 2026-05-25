@@ -25,22 +25,11 @@ export default function HeroSection() {
       {/* Main Content */}
       <motion.div
         className="relative z-10 flex flex-col items-center text-center px-6 w-full max-w-lg mx-auto"
-        style={{ paddingTop: '50px', paddingBottom: '12px' }}
+        style={{ paddingTop: '273px', paddingBottom: '12px' }}
         initial={{ opacity: 0, y: -220 }}
         animate={{ opacity: 1, y: -15 }}
         transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
       >
-        {/* Basmala */}
-        <motion.img
-          src="/logo/Basmala.png"
-          alt="Basmala"
-          className="w-44 sm:w-64 mx-auto opacity-90 pointer-events-none"
-          style={{ marginTop: '70px', marginBottom: '12px' }}
-          initial={{ opacity: 0, y: -28 }}
-          animate={{ opacity: 1, y: -6 }}
-          transition={{ delay: 0.2, duration: 1 }}
-        />
-
         {/* Invitation lines */}
         <motion.p
           className="font-cinzel text-[11px] sm:text-xs tracking-[0.35em] uppercase lux-text-soft"
