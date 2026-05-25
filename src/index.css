@@ -44,6 +44,12 @@ body {
   font-family: 'Great Vibes', cursive;
 }
 
+.font-calligraphy {
+  font-family: 'Beau Rivage', cursive;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
 .font-serif-elegant {
   font-family: 'Cormorant Garamond', serif;
 }

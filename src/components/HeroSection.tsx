@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 export default function HeroSection() {
   return (
     <section
-      className="min-h-[68svh] sm:min-h-[110vh] flex flex-col items-center justify-start relative overflow-hidden"
+      className="min-h-[120svh] sm:min-h-[160vh] flex flex-col items-center justify-start relative overflow-hidden"
       style={{
         background: 'linear-gradient(180deg, #fbf6ee 0%, #f2e5d4 55%, #ead7bf 100%)',
       }}
@@ -13,19 +13,19 @@ export default function HeroSection() {
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          backgroundImage: 'url(/logo/backgroundsection2.PNG)',
+          backgroundImage: 'url(/logo/hero.JPG)',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center top',
-          backgroundSize: '105%',
-          opacity: 0.22,
-          filter: 'brightness(0.85) saturate(0.8)',
+          backgroundSize: '100% 110%',
+          opacity: 0.9,
+          filter: 'brightness(1) saturate(1)',
         }}
       />
 
       {/* Main Content */}
       <motion.div
         className="relative z-10 flex flex-col items-center text-center px-6 w-full max-w-lg mx-auto"
-        style={{ paddingTop: '0px', paddingBottom: '12px' }}
+        style={{ paddingTop: '50px', paddingBottom: '12px' }}
         initial={{ opacity: 0, y: -220 }}
         animate={{ opacity: 1, y: -15 }}
         transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
@@ -35,11 +35,57 @@ export default function HeroSection() {
           src="/logo/Basmala.png"
           alt="Basmala"
           className="w-44 sm:w-64 mx-auto opacity-90 pointer-events-none"
-          style={{ marginTop: '6px', marginBottom: '12px' }}
+          style={{ marginTop: '95px', marginBottom: '12px' }}
           initial={{ opacity: 0, y: -28 }}
           animate={{ opacity: 1, y: -6 }}
           transition={{ delay: 0.2, duration: 1 }}
         />
+
+        {/* Invitation lines */}
+        <motion.p
+          className="font-cinzel text-[11px] sm:text-xs tracking-[0.35em] uppercase lux-text-soft"
+          style={{ marginTop: '-80px', marginBottom: '6px' }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.35, duration: 0.7 }}
+        >
+          PLEASE JOIN US FOR THE
+        </motion.p>
+
+        <motion.p
+          className="font-calligraphy lux-text-gold"
+          style={{
+            fontSize: 'clamp(38px, 10vw, 72px)',
+            lineHeight: '0.95',
+            marginBottom: '6px',
+            textShadow: '0 10px 28px rgba(31, 5, 9, 0.22), 0 2px 6px rgba(255, 255, 255, 0.35)',
+          }}
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.45, duration: 0.8 }}
+        >
+          Wedding
+        </motion.p>
+
+        <motion.p
+          className="font-cinzel tracking-[0.3em] lux-text-soft uppercase"
+          style={{ fontSize: 'clamp(10px, 3vw, 14px)', marginBottom: '6px' }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5, duration: 0.6 }}
+        >
+          OF
+        </motion.p>
+
+        <motion.p
+          className="font-cinzel tracking-[0.28em] lux-text-soft uppercase"
+          style={{ fontSize: 'clamp(12px, 3.6vw, 18px)', marginBottom: '10px' }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.55, duration: 0.7 }}
+        >
+          KARIM & NADA
+        </motion.p>
 
         {/* Gold divider */}
         <motion.div
@@ -64,32 +110,6 @@ export default function HeroSection() {
             style={{ width: 'clamp(46px, 11vw, 80px)' }}
             className="opacity-70 mx-auto"
           />
-        </motion.div>
-
-        {/* Save the Date */}
-        <motion.p
-          className="font-script lux-text-muted"
-          style={{ fontSize: 'clamp(23px, 6.5vw, 34px)', marginBottom: '10px' }}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.7, duration: 0.8 }}
-        >
-          Save the Date
-        </motion.p>
-
-        {/* Names */}
-        <motion.div
-          style={{ marginBottom: '10px' }}
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.9, duration: 0.8 }}
-        >
-          <h1
-            className="font-script arabic-gold leading-tight px-2"
-            style={{ fontSize: 'clamp(31px, 8.5vw, 52px)' }}
-          >
-            Karim & Nada
-          </h1>
         </motion.div>
 
         {/* Divider */}
