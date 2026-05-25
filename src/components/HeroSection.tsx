@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 export default function HeroSection() {
   return (
     <section
-      className="min-h-[120svh] sm:min-h-[160vh] flex flex-col items-center justify-start relative overflow-hidden"
+      className="min-h-[100svh] sm:min-h-[140vh] flex flex-col items-center justify-start relative overflow-hidden"
       style={{
         background: 'linear-gradient(180deg, #fbf6ee 0%, #f2e5d4 55%, #ead7bf 100%)',
       }}
@@ -15,7 +15,7 @@ export default function HeroSection() {
         style={{
           backgroundImage: 'url(/logo/hero.JPG)',
           backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center top',
+          backgroundPosition: 'center -15px',
           backgroundSize: '100% 110%',
           opacity: 0.9,
           filter: 'brightness(1) saturate(1)',
@@ -35,7 +35,7 @@ export default function HeroSection() {
           src="/logo/Basmala.png"
           alt="Basmala"
           className="w-44 sm:w-64 mx-auto opacity-90 pointer-events-none"
-          style={{ marginTop: '95px', marginBottom: '12px' }}
+          style={{ marginTop: '70px', marginBottom: '12px' }}
           initial={{ opacity: 0, y: -28 }}
           animate={{ opacity: 1, y: -6 }}
           transition={{ delay: 0.2, duration: 1 }}
