@@ -30,10 +30,10 @@ export default function LocationSection() {
           <p className="font-serif-elegant text-xs lux-text-faint mt-2">
             Katameya Dunes, Cairo, Egypt
           </p>
-          <p className="font-serif-elegant text-xs lux-text-soft mt-4 italic">
+          <p className="font-serif-elegant text-base sm:text-lg lux-text-soft mt-4 italic font-semibold">
             Kindly note: Smoking is prohibited inside the hall.
           </p>
-          <p className="font-arabic text-xs lux-text-soft mt-1" dir="rtl">
+          <p className="font-arabic text-base sm:text-lg lux-text-soft mt-1 font-semibold" dir="rtl">
             يرجى العلم أن التدخين ممنوع داخل القاعة
           </p>
           <div className="golden-divider w-40 mx-auto mt-4" />

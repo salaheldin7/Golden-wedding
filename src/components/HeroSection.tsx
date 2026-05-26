@@ -32,7 +32,7 @@ export default function HeroSection() {
       >
         {/* Invitation lines */}
         <motion.p
-          className="font-cinzel text-[11px] sm:text-xs tracking-[0.35em] uppercase lux-text-soft"
+          className="font-cinzel text-[12px] sm:text-sm tracking-[0.32em] uppercase lux-text font-semibold"
           style={{ marginTop: '-80px', marginBottom: '6px' }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -57,8 +57,8 @@ export default function HeroSection() {
         </motion.p>
 
         <motion.p
-          className="font-cinzel tracking-[0.3em] lux-text-soft uppercase"
-          style={{ fontSize: 'clamp(10px, 3vw, 14px)', marginBottom: '6px' }}
+          className="font-cinzel tracking-[0.3em] lux-text uppercase font-semibold"
+          style={{ fontSize: 'clamp(12px, 3.4vw, 16px)', marginBottom: '6px' }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.6 }}
@@ -67,8 +67,8 @@ export default function HeroSection() {
         </motion.p>
 
         <motion.p
-          className="font-cinzel tracking-[0.28em] lux-text-soft uppercase"
-          style={{ fontSize: 'clamp(12px, 3.6vw, 18px)', marginBottom: '10px' }}
+          className="font-cinzel tracking-[0.28em] lux-text-soft uppercase font-semibold"
+          style={{ fontSize: 'clamp(14px, 4vw, 22px)', marginBottom: '10px' }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.55, duration: 0.7 }}
@@ -119,24 +119,24 @@ export default function HeroSection() {
           transition={{ delay: 1.1, duration: 0.8 }}
         >
           <span
-            className="font-script lux-text-muted"
-            style={{ fontSize: 'clamp(17px, 5.2vw, 27px)' }}
+            className="font-script lux-text-muted font-semibold"
+            style={{ fontSize: 'clamp(19px, 6vw, 32px)' }}
           >
             August
           </span>
 
           <div className="text-center px-3 border-l border-r border-[rgba(201,169,110,0.35)]">
             <span
-              className="font-cinzel lux-text font-light"
-              style={{ fontSize: 'clamp(23px, 7vw, 35px)' }}
+              className="font-cinzel lux-text font-semibold"
+              style={{ fontSize: 'clamp(26px, 7.5vw, 40px)' }}
             >
               21
             </span>
           </div>
 
           <span
-            className="font-script lux-text-muted"
-            style={{ fontSize: 'clamp(17px, 5.2vw, 27px)' }}
+            className="font-script lux-text-muted font-semibold"
+            style={{ fontSize: 'clamp(19px, 6vw, 32px)' }}
           >
             2026
           </span>
@@ -144,7 +144,7 @@ export default function HeroSection() {
 
         {/* Time */}
         <motion.p
-          className="font-cinzel text-xs tracking-[0.3em] lux-text-faint uppercase"
+          className="font-cinzel text-sm sm:text-base tracking-[0.28em] lux-text-soft uppercase font-semibold"
           style={{ marginBottom: '10px' }}
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
@@ -161,15 +161,15 @@ export default function HeroSection() {
           transition={{ delay: 1.3, duration: 0.8 }}
         >
           <p
-            className="font-serif-elegant tracking-widest uppercase lux-text-soft"
-            style={{ fontSize: 'clamp(9px, 2.5vw, 13px)' }}
+            className="font-serif-elegant tracking-widest uppercase lux-text-soft font-semibold"
+            style={{ fontSize: 'clamp(11px, 2.8vw, 16px)' }}
           >
             The Westin Cairo Golf Resort and Spa
           </p>
 
           <p
-            className="font-arabic arabic-gold normal-case mt-1"
-            style={{ fontSize: 'clamp(11px, 3vw, 15px)' }}
+            className="font-arabic arabic-gold normal-case mt-1 font-semibold"
+            style={{ fontSize: 'clamp(13px, 3.4vw, 18px)' }}
             dir="rtl"
           >
             القاهرة · فندق ويستن كايرو
