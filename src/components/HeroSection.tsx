@@ -68,7 +68,7 @@ export default function HeroSection() {
 
         <motion.p
           className="font-cinzel tracking-[0.28em] lux-text-soft uppercase font-semibold"
-          style={{ fontSize: 'clamp(22px, 6vw, 34px)', marginBottom: '10px' }}
+          style={{ fontSize: 'clamp(26px, 7vw, 40px)', marginBottom: '10px' }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.55, duration: 0.7 }}
@@ -144,7 +144,7 @@ export default function HeroSection() {
 
         {/* Time */}
         <motion.p
-          className="font-cinzel text-sm sm:text-base tracking-[0.28em] lux-text-soft uppercase font-semibold"
+          className="font-cinzel text-base sm:text-lg tracking-[0.28em] lux-text-soft uppercase font-semibold"
           style={{ marginBottom: '10px' }}
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
@@ -155,16 +155,18 @@ export default function HeroSection() {
 
         {/* Location */}
         <motion.div
-          style={{ marginBottom: '14px' }}
+          className="mx-auto"
+          style={{ marginBottom: '14px', maxWidth: 'clamp(18rem, 42vw, 26rem)' }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.3, duration: 0.8 }}
         >
           <p
             className="font-serif-elegant tracking-widest uppercase lux-text-soft font-semibold"
-            style={{ fontSize: 'clamp(14px, 3.4vw, 20px)' }}
+            style={{ fontSize: 'clamp(16px, 3.8vw, 24px)' }}
           >
-            The Westin Cairo Golf Resort and Spa
+            <span className="block">The Westin Cairo Golf</span>
+            <span className="block">Resort and Spa</span>
           </p>
 
           <p
