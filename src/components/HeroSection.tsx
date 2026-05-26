@@ -44,7 +44,7 @@ export default function HeroSection() {
         <motion.p
           className="font-calligraphy lux-text-gold"
           style={{
-            fontSize: 'clamp(38px, 10vw, 72px)',
+            fontSize: 'clamp(42px, 11vw, 82px)',
             lineHeight: '0.95',
             marginBottom: '6px',
             textShadow: '0 10px 28px rgba(31, 5, 9, 0.22), 0 2px 6px rgba(255, 255, 255, 0.35)',

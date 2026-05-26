@@ -63,11 +63,11 @@ export default function RSVPSection() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="font-script text-5xl lux-text mb-2">RSVP</h2>
-          <p className="font-arabic text-sm lux-text-soft" dir="rtl">
+          <h2 className="font-script text-6xl sm:text-7xl lux-text mb-2 font-semibold">RSVP</h2>
+          <p className="font-arabic text-base sm:text-lg lux-text-soft font-semibold" dir="rtl">
             الرجاء تأكيد الحضور
           </p>
-          <p className="font-serif-elegant italic lux-text-faint text-sm">
+          <p className="font-serif-elegant italic lux-text-soft text-base sm:text-lg font-semibold">
             Kindly confirm your attendance.
           </p>
 
@@ -101,10 +101,10 @@ export default function RSVPSection() {
               {/* Name */}
               <div className="mb-5">
                 <div className="mb-2 flex items-baseline justify-between gap-3">
-                  <label className="font-cinzel text-xs tracking-widest lux-text-faint uppercase">
+                  <label className="font-cinzel text-sm sm:text-base tracking-widest lux-text-soft uppercase font-semibold">
                     Full Name
                   </label>
-                  <span className="font-arabic text-xs lux-text-faint text-right" dir="rtl">
+                  <span className="font-arabic text-sm sm:text-base lux-text-soft text-right font-semibold" dir="rtl">
                     الاسم الكامل
                   </span>
                 </div>
@@ -121,10 +121,10 @@ export default function RSVPSection() {
               {/* Attending */}
               <div className="mb-5">
                 <div className="mb-3 flex items-baseline justify-between gap-3">
-                  <label className="font-cinzel text-xs tracking-widest lux-text-faint uppercase">
+                  <label className="font-cinzel text-sm sm:text-base tracking-widest lux-text-soft uppercase font-semibold">
                     Will you attend?
                   </label>
-                  <span className="font-arabic text-xs lux-text-faint text-right" dir="rtl">
+                  <span className="font-arabic text-sm sm:text-base lux-text-soft text-right font-semibold" dir="rtl">
                     هل ستحضر؟
                   </span>
                 </div>
@@ -150,10 +150,10 @@ export default function RSVPSection() {
               {form.attending === 'yes' && (
                 <div className="mb-5">
                   <div className="mb-2 flex items-baseline justify-between gap-3">
-                    <label className="font-cinzel text-xs tracking-widest lux-text-faint uppercase">
+                    <label className="font-cinzel text-sm sm:text-base tracking-widest lux-text-soft uppercase font-semibold">
                       Number of Guests
                     </label>
-                    <span className="font-arabic text-xs lux-text-faint text-right" dir="rtl">
+                    <span className="font-arabic text-sm sm:text-base lux-text-soft text-right font-semibold" dir="rtl">
                       عدد الضيوف
                     </span>
                   </div>
@@ -177,10 +177,10 @@ export default function RSVPSection() {
               {/* Message */}
               <div>
                 <div className="mb-2 flex items-baseline justify-between gap-3">
-                  <label className="font-cinzel text-xs tracking-widest lux-text-faint uppercase">
+                  <label className="font-cinzel text-sm sm:text-base tracking-widest lux-text-soft uppercase font-semibold">
                     Message for the Couple
                   </label>
-                  <span className="font-arabic text-xs lux-text-faint text-right" dir="rtl">
+                  <span className="font-arabic text-sm sm:text-base lux-text-soft text-right font-semibold" dir="rtl">
                     رسالة للعروسين
                   </span>
                 </div>
