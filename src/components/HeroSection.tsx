@@ -32,7 +32,7 @@ export default function HeroSection() {
       >
         {/* Invitation lines */}
         <motion.p
-          className="font-cinzel text-[12px] sm:text-sm tracking-[0.32em] uppercase lux-text font-semibold"
+          className="font-cinzel text-[14px] sm:text-base tracking-[0.32em] uppercase lux-text font-semibold"
           style={{ marginTop: '-80px', marginBottom: '6px' }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -44,7 +44,7 @@ export default function HeroSection() {
         <motion.p
           className="font-calligraphy lux-text-gold"
           style={{
-            fontSize: 'clamp(42px, 11vw, 82px)',
+            fontSize: 'clamp(50px, 12vw, 96px)',
             lineHeight: '0.95',
             marginBottom: '6px',
             textShadow: '0 10px 28px rgba(31, 5, 9, 0.22), 0 2px 6px rgba(255, 255, 255, 0.35)',
@@ -58,7 +58,7 @@ export default function HeroSection() {
 
         <motion.p
           className="font-cinzel tracking-[0.3em] lux-text uppercase font-semibold"
-          style={{ fontSize: 'clamp(12px, 3.4vw, 16px)', marginBottom: '6px' }}
+          style={{ fontSize: 'clamp(14px, 3.8vw, 20px)', marginBottom: '6px' }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.6 }}
@@ -68,7 +68,7 @@ export default function HeroSection() {
 
         <motion.p
           className="font-cinzel tracking-[0.28em] lux-text-soft uppercase font-semibold"
-          style={{ fontSize: 'clamp(14px, 4vw, 22px)', marginBottom: '10px' }}
+          style={{ fontSize: 'clamp(22px, 6vw, 34px)', marginBottom: '10px' }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.55, duration: 0.7 }}
@@ -162,14 +162,14 @@ export default function HeroSection() {
         >
           <p
             className="font-serif-elegant tracking-widest uppercase lux-text-soft font-semibold"
-            style={{ fontSize: 'clamp(11px, 2.8vw, 16px)' }}
+            style={{ fontSize: 'clamp(14px, 3.4vw, 20px)' }}
           >
             The Westin Cairo Golf Resort and Spa
           </p>
 
           <p
             className="font-arabic arabic-gold normal-case mt-1 font-semibold"
-            style={{ fontSize: 'clamp(13px, 3.4vw, 18px)' }}
+            style={{ fontSize: 'clamp(16px, 4.1vw, 22px)' }}
             dir="rtl"
           >
             القاهرة · فندق ويستن كايرو

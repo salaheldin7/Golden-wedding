@@ -24,16 +24,16 @@ export default function LocationSection() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="font-script text-5xl lux-text mb-2">Location</h2>
-          <p className="font-serif-elegant text-base sm:text-lg lux-text-soft tracking-widest uppercase font-semibold">
+          <p className="font-serif-elegant text-lg sm:text-xl lux-text-soft tracking-widest uppercase font-semibold">
             The Westin Cairo Golf Resort and Spa
           </p>
-          <p className="font-serif-elegant text-sm sm:text-base lux-text-soft mt-2 font-semibold">
+          <p className="font-serif-elegant text-base sm:text-lg lux-text-soft mt-2 font-semibold">
             Katameya Dunes, Cairo, Egypt
           </p>
-          <p className="font-serif-elegant text-lg sm:text-xl lux-text-soft mt-4 italic font-semibold">
+          <p className="font-serif-elegant text-xl sm:text-2xl lux-text-soft mt-4 italic font-semibold">
             Kindly note: Smoking is prohibited inside the hall.
           </p>
-          <p className="font-arabic text-lg sm:text-xl lux-text-soft mt-1 font-semibold" dir="rtl">
+          <p className="font-arabic text-xl sm:text-2xl lux-text-soft mt-1 font-semibold" dir="rtl">
             يرجى العلم أن التدخين ممنوع داخل القاعة
           </p>
           <div className="golden-divider w-40 mx-auto mt-4" />
