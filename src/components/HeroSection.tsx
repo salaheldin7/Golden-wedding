@@ -68,7 +68,7 @@ export default function HeroSection() {
 
         <motion.p
           className="font-cinzel tracking-[0.28em] lux-text-soft uppercase font-semibold"
-          style={{ fontSize: 'clamp(26px, 7vw, 40px)', marginBottom: '10px' }}
+          style={{ fontSize: 'clamp(26px, 6.4vw, 40px)', marginBottom: '10px' }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.55, duration: 0.7 }}
