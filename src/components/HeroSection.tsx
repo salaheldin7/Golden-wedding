@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 export default function HeroSection() {
   return (
     <section
-      className="min-h-[100svh] sm:min-h-[140vh] flex flex-col items-center justify-start relative overflow-hidden"
+      className="min-h-[115svh] sm:min-h-[165vh] flex flex-col items-center justify-start relative overflow-hidden"
       style={{
         background: 'linear-gradient(180deg, #fbf6ee 0%, #f2e5d4 55%, #ead7bf 100%)',
       }}
@@ -25,7 +25,7 @@ export default function HeroSection() {
       {/* Main Content */}
       <motion.div
         className="relative z-10 flex flex-col items-center text-center px-6 w-full max-w-lg mx-auto"
-        style={{ paddingTop: '315px', paddingBottom: '12px' }}
+        style={{ paddingTop: '300px', paddingBottom: '36px' }}
         initial={{ opacity: 0, y: -220 }}
         animate={{ opacity: 1, y: -15 }}
         transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
@@ -76,10 +76,32 @@ export default function HeroSection() {
           KARIM & NADA
         </motion.p>
 
+        <motion.div
+          className="mt-2 flex flex-col items-center gap-3"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.62, duration: 0.7 }}
+        >
+          <img
+            src="/logo/Basmala.png"
+            alt="Basmala"
+            className="mx-auto h-auto w-[clamp(220px,44vw,360px)] select-none object-contain"
+            loading="eager"
+            decoding="async"
+          />
+
+          <p
+            className="font-basmala text-center leading-[1.75] text-[clamp(18px,4.2vw,29px)] text-[#8f3a4a]"
+            dir="rtl"
+          >
+            وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً،
+          </p>
+        </motion.div>
+
         {/* Gold divider */}
         <motion.div
           className="golden-divider w-36 sm:w-44"
-          style={{ marginTop: '8px', marginBottom: '12px' }}
+          style={{ marginTop: '14px', marginBottom: '12px' }}
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
