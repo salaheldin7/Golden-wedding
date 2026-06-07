@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 export default function HeroSection() {
   return (
     <section
-      className="min-h-[100svh] sm:min-h-[140vh] flex flex-col items-center justify-start relative overflow-hidden"
+      className="min-h-[120svh] sm:min-h-[175vh] flex flex-col items-center justify-start relative overflow-hidden"
       style={{
         background: 'linear-gradient(180deg, #fbf6ee 0%, #f2e5d4 55%, #ead7bf 100%)',
       }}
@@ -25,15 +25,30 @@ export default function HeroSection() {
       {/* Main Content */}
       <motion.div
         className="relative z-10 flex flex-col items-center text-center px-6 w-full max-w-lg mx-auto"
-        style={{ paddingTop: '315px', paddingBottom: '12px' }}
+        style={{ paddingTop: '265px', paddingBottom: '36px' }}
         initial={{ opacity: 0, y: -220 }}
         animate={{ opacity: 1, y: -15 }}
         transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
       >
+        <motion.p
+          className="font-basmala text-center leading-[1.55] text-[clamp(18px,4.2vw,28px)] text-black mb-3"
+          dir="rtl"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.28, duration: 0.7 }}
+        >
+          <span className="block px-2">
+            {'{'} وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا  
+          </span>
+          <span className="block px-2">
+          لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً {'}'}
+          </span>
+        </motion.p>
+
         {/* Invitation lines */}
         <motion.p
           className="font-cinzel text-[14px] sm:text-base tracking-[0.32em] uppercase lux-text font-semibold"
-          style={{ marginTop: '-80px', marginBottom: '6px' }}
+          style={{ marginTop: '18px', marginBottom: '6px' }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.35, duration: 0.7 }}
@@ -79,7 +94,7 @@ export default function HeroSection() {
         {/* Gold divider */}
         <motion.div
           className="golden-divider w-36 sm:w-44"
-          style={{ marginTop: '8px', marginBottom: '12px' }}
+          style={{ marginTop: '14px', marginBottom: '12px' }}
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
